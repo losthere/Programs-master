@@ -1,0 +1,5 @@
+maximum rectangle in binary matrix
+top-down and bottom-up concept
+minimum number of steps to reach at last index
+maximum size of square in binary matrix
+LCS
