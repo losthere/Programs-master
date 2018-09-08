@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class Test{
+    static void fun(int a[],int ex)
+    {
+      
+        Set<Integer> set = new HashSet<>();
+        int sum = 0;
+        int s = 0;
+        for(int i=0; i<a.length;i++)
+        {
+            
+             if(sum == ex)
+                break;
+            
+            if(sum>ex)
+               {
+                   sum = sum-a[s];
+                   set.remove(a[s]);
+                   ++s;
+               }
+            if(sum<ex)
+            { sum = sum+a[i];
+                set.add(a[i]);
+            }
+           
+        }
+       
+        System.out.print(set);
+       
+    }
+
+     public static void main(String []args){
+        int arr[] = {15, 2, 4, 8, 9, 5, 10, 23};
+        int ex =23;
+        fun(arr,ex);
+        
+     }
+}
